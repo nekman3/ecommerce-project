@@ -1,0 +1,15 @@
+.basket__inputs {
+  display: flex;
+  justify-content: flex-end;
+  top: 60px;
+  z-index: 999;
+  background-color: white;
+  margin-bottom: 60px;
+}
+
+.basket__product-list {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  gap: 20px;
+}

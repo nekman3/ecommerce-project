@@ -1,0 +1,28 @@
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border: 2px solid $cream-light;
+  padding: 10px;
+  height: 60px;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 999;
+
+  &__logo {
+    margin-bottom: 0;
+    color: $gray;
+  }
+
+  &__link {
+    text-decoration: none;
+    outline-color: transparent;
+    text-align: center;
+    color: black;
+  }
+
+  &__link:hover {
+    color: $orange;
+  }
+}

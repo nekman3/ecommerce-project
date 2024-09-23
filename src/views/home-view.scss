@@ -1,0 +1,30 @@
+.home__inputs {
+  display: flex;
+  justify-content: flex-end;
+  top: 60px;
+  background-color: white;
+  margin-bottom: 60px;
+}
+
+.home__product-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  gap: 20px;
+
+  @media (max-width: 1840px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (max-width: 1380px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 916px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.showMore {
+  padding: 20px;
+}

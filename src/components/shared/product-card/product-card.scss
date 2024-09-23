@@ -1,0 +1,137 @@
+.productCard {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  border: 1px solid $cream-light;
+  border-radius: 10px;
+  padding: 10px;
+  transition: 0.4s;
+
+  &--large {
+    width: 100%;
+  }
+
+  &--small {
+    width: 350px;
+  }
+
+  &:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  &--active {
+    border: 1px solid $gray;
+  }
+
+  &__poster {
+    width: 100px;
+    height: 100px;
+  }
+
+  &__poster-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 6%;
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100%;
+    width: 100%;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 2px 0 0;
+    text-align: left;
+  }
+
+  &__quantity {
+    color: $orange;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  &__overview {
+    font-size: 14px;
+    color: $gray;
+    text-align: left;
+    // add text ellipsis when lines are more than three
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+  }
+
+  &__footer {
+    display: flex;
+
+    font-size: 12px;
+    color: $gray;
+    width: 100%;
+    margin-top: 20px;
+
+    &--large {
+      justify-content: space-between;
+    }
+
+    &-right {
+      display: flex;
+      width: 100%;
+    }
+
+    &-right--large {
+      justify-content: flex-end;
+    }
+    &-right--small {
+      justify-content: space-between;
+    }
+
+    &-right__el1 {
+      font-style: italic;
+      margin-right: 8px;
+      font-weight: bold;
+    }
+
+    &-right__el2 {
+      font-style: italic;
+      margin-right: 28px;
+      font-weight: bold;
+    }
+
+    &-right__el3 {
+      margin-right: 4px;
+    }
+
+    &__btn {
+      background-color: $orange;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    &__btn-warning {
+      background-color: $red;
+    }
+  }
+}
+
+// Vue transitions
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
